@@ -1,0 +1,80 @@
+@import '../../vars.css';
+
+.container {
+    position: relative; /* relative to parent */
+    border-radius: 15px; /* round corners */
+    padding: 75px;
+    margin-left: 10%; /* 10% from left */
+    margin-right: 10%;  /* 10% from right */
+}
+
+.title {
+    color: var(--color-text);
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.list {
+    color: var(--color-text);   
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.listItem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 20px;
+    list-style: none;
+    padding: 25px;
+    background-image: linear-gradient(90deg, var(--color-primary) 0%, rgba(255,255,255,0) 100%);
+    background-size: 0 100%; /* no gradient */
+    background-repeat: no-repeat;
+    transition: 0.4s;
+
+}
+.listItem:hover {
+    background-size: 100% 100%; /* full gradient */
+    transition: background-size 0.5s;
+}
+
+.listItem h3 {
+    font-size: 25px;
+    font-weight: 700;
+    color: var(--color-dark);
+}
+
+.item {
+    margin-left: 20px;
+    font-family: var(--font-lato);
+}
+
+@media screen and (max-width:830px) {
+    .container {
+        background: transparent; 
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .listItem {
+        margin-top: 20px;
+    }
+
+    .item {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+}

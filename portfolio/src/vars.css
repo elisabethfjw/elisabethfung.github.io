@@ -1,0 +1,12 @@
+:root{
+    /* colors */
+    --color-text: #1A120B;
+    --color-primary: #fff;
+    --color-secondary: #DFD7BF;
+    --color-dark: #3F2305;
+    --color-bg: #fff;
+    /* fonts */
+    --font-italic: 'playfair-italic', sans-serif;
+    --font-medium: 'playfair-medium', sans-serif;
+    --font-lato: 'lato-regular', sans-serif;
+}

@@ -1,0 +1,71 @@
+@import '../../vars.css';
+
+.container {
+    position: relative; /* relative to parent */
+    display: flex; /* flexbox */
+    align-items: center;    
+    justify-content: center; /* center content */
+    margin-top: 50px; /* 50px from top */
+    z-index: 1; /* above everything else */
+    margin-left: 10%; /* 10% from left */
+    margin-right: 10%;  /* 10% from right */
+}
+
+.content {
+    display: flex; /* flexbox */
+    flex-direction: column; /* column */
+    align-items: flex-start; /* align left */
+    color: var(--color-text); /* text color */
+    z-index: 1; /* above everything else */
+}
+
+.title {
+    font-size: 72px;
+    font-weight: 900;
+    font-family: var(--font-medium);
+    padding-right: 40px;
+}
+
+.description {
+    font-size: 30px;
+    font-family: var(--font-medium);
+    margin-top: 20px;
+    margin-bottom: 30px;
+    color: var(--color-dark);
+}
+
+.headerImg {
+    width: 40%; /* Set the width of the image to 100% */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.button {
+    text-decoration: none; /* no underline */
+    border-radius: 100px; /* round corners */
+    background-color: var(--color-secondary); 
+    color: var(--color-dark);
+    padding: 10px 20px; /* padding */
+    margin-right: 10px; /* 10px from right */
+}
+
+.button:hover {
+    background-color: var(--color-dark); /* dark background */
+    color: var(--color-primary); /* white text */
+}
+
+.contact {
+    margin-top: 20px; /* 20px from top */
+    margin-right: 20px;
+
+}
+
+
+@media screen and (max-width: 830px) {
+    .container {
+      flex-direction: column-reverse;
+    }
+  
+    .content {
+      align-items: center;
+    }
+  }

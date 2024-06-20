@@ -1,0 +1,31 @@
+@import "./vars.css";
+
+@font-face {
+  font-family: "playfair-medium";
+  src: url(../assets/PlayfairDisplay-Medium.ttf)
+}
+.playfair-medium {
+  font-family: "playfair-medium"
+}
+
+@font-face {
+  font-family: "playfair-italic";
+  src: url(../assets/PlayfairDisplay-Italic.ttf)
+}
+.playfair-italic {
+  font-family: "playfair-italic"
+}
+
+@font-face {
+  font-family: "lato-regular";
+  src: url(../assets/Lato-Regular.ttf);
+}
+.lato-regular {
+  font-family: "lato-regular";
+}
+
+.App {
+  background-color: var(--color-bg);
+  width: 100%;
+  height: 100%;
+}
