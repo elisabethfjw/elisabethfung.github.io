@@ -14,7 +14,7 @@ export const Header = () => {
               <a href='mailto:elisabeth_fung@mymail.sutd.edu.sg' className={styles.button}>Email</a>
               <a href='https://www.linkedin.com/in/elisabeth-fung/' className={styles.button}>LinkedIn</a>
               <a href={resume} className={styles.button}>Resume</a>
-              <a href={cv} className={styles.button}>CV</a>
+              <a href='https://github.com/elisabethfjw' className={styles.button}>GitHub</a>
             </div>
         </div>
         <img src={getImageURL('lighthouse.png')} alt='Header Image' className={styles.headerImg}/>
